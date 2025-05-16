@@ -1,193 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>fuck.c - Meme Terminal App</title>
-
-  <!-- Embed Meta Tags -->
-  <meta property="og:title" content="fuck.c – Meme Terminal App" />
-  <meta property="og:description" content="A Linux C program that just prints 'fuck' in your terminal. Built for rage. Promoted by registeredgamer (George W. Bush)." />
-  <meta property="og:image" content="https://fuckdotcoffical.github.io/fuck-preview.png" />
-  <meta property="og:url" content="https://fuckdotcoffical.github.io/" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="fuck.c – Meme Terminal App" />
-  <meta name="twitter:description" content="A Linux C program that just prints 'fuck' in your terminal. Built for rage. Pure meme energy." />
-  <meta name="twitter:image" content="https://fuckdotcoffical.github.io/fuck-preview.png" />
-
+  <meta charset="UTF-8">
+  <title>HOD - Hall of Dumbasses</title>
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #00ff00;
-      font-family: monospace;
-      scroll-behavior: smooth;
+      font-family: sans-serif;
+      background-color: #111;
+      color: #eee;
+      text-align: center;
       margin: 0;
-      padding: 0;
+      padding: 2rem;
     }
 
-    header, section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 80px 20px;
+    h1 {
+      font-size: 2rem;
+      color: #ff5555;
     }
 
-    h1, h2 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+    nav {
+      margin-top: 20px;
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 30px;
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      background: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    a.download-btn {
-      background-color: #00ff00;
-      color: #000;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 10px #00ff00;
-      transition: transform 0.15s ease, box-shadow 0.3s ease;
-      transform-origin: center;
+    button:hover {
+      background: #666;
     }
 
-    a.download-btn:hover {
-      box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
-      transform: scale(1.08);
+    .audio-player {
+      margin-top: 20px;
     }
 
-    a.download-btn:active {
-      transform: scale(0.95);
-      box-shadow: 0 0 10px #00ff00;
+    .page {
+      display: none;
+      margin-top: 2rem;
     }
 
-    .terminal-preview {
-      background-color: #000;
-      padding: 15px;
-      border-radius: 8px;
-      color: #00ff00;
-      font-size: 1rem;
-      max-width: 80%;
-      margin-top: 30px;
-    }
-
-    .scroll-down {
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-
-    .scroll-down a {
-      color: #00ff00;
-      text-decoration: underline;
-    }
-
-    #how-it-works {
-      background-color: #000;
-      border-top: 1px solid #00ff00;
-    }
-
-    footer {
-      padding: 40px 20px;
-      background-color: #0a0a0a;
-      color: #00ff00;
-      font-size: 1rem;
-      text-align: center;
-      border-top: 1px solid #00ff00;
-    }
-
-    .discord-btn {
-      margin-top: 15px;
-      display: inline-block;
-      background-color: #5865F2;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 10px #5865F2;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .discord-btn:hover {
-      background-color: #4752c4;
-      box-shadow: 0 0 15px #5865F2;
-      transform: scale(1.05);
-    }
-
-    .discord-btn:active {
-      transform: scale(0.95);
-    }
-
-    code {
-      color: #00ff00;
+    .active {
+      display: block;
     }
   </style>
 </head>
 <body>
+  <h1>HOD - Hall of Dumbasses</h1>
 
-  <header>
-    <h1>fuck.c</h1>
-    <p>
-      A meme-tier Linux app that simply screams <code>fuck</code> in your terminal.  
-      For those days when error messages just aren’t enough.
-    </p>
-    <a href="https://www.mediafire.com/file/qhl3ssajoikd3u2/fuck.c/file" class="download-btn" target="_blank" rel="noopener noreferrer">
-      🔥 Download fuck.c
-    </a>
+  <nav>
+    <button onclick="showPage(1)">1</button>
+    <button onclick="showPage(2)">2</button>
+    <button onclick="showPage(3)">3</button>
+    <button onclick="showPage(4)">4</button>
+    <button onclick="showPage(5)">5</button>
+  </nav>
 
-    <div class="terminal-preview">
-      <code>
-        $ gcc fuck.c -o fuck<br>
-        $ ./fuck<br>
-        fuck
-      </code>
-    </div>
+  <div id="page1" class="page active">
+    <p>This is Page 1. IP Address: 73.151.146.212 Country: United States
+ Region: California City: Stockton Timezone: America/Los_Angeles 
+Postal Code: 95203 Latitude: 37.9527 Longitude: -121.3161 discord info: display = pxrks @ = 2slrub3n 
+you shouldnt have been money hungry XDthis is the internet full of wonders and full everything thats right everything so theres 
+obviously going to be some people on here that are not what they seem so next time someone dms you and asks you to do something in exchange for something you want either A. dont do it or B. do some research to figure out if it will have consiquenses or not -sodaduhking .</p>
+  </div>
+  <div id="page2" class="page">
+    <p>This is Page 2. Add your dumbassery here.</p>
+  </div>
+  <div id="page3" class="page">
+    <p>This is Page 3. List anything you want.</p>
+  </div>
+  <div id="page4" class="page">
+    <p>This is Page 4. More stuff here.</p>
+  </div>
+  <div id="page5" class="page">
+    <p>This is Page 5. End of the hall.</p>
+  </div>
 
-    <div class="scroll-down">
-      <p><a href="#how-it-works">▼ Scroll down to learn more</a></p>
-    </div>
-  </header>
+  <div class="audio-player">
+    <audio controls autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
-  <section id="how-it-works">
-    <h2>💡 How It Works</h2>
-    <p>
-      This masterpiece of digital profanity is written in pure C.<br>
-      When you compile and run it, it uses <code>printf()</code> to spit out the word <code>fuck</code> — and nothing else.
-    </p>
-    <p>
-      It's a joke, a meme, a moment of terminal catharsis.<br>
-      Want to see the source? It's literally just this:
-    </p>
-    <div class="terminal-preview">
-      <code>
-        #include &lt;stdio.h&gt;<br><br>
-        int main() {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;printf("fuck\\n");<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
-        }
-      </code>
-    </div>
-    <p>
-      That’s it. That’s the whole thing. You're welcome.
-    </p>
-  </section>
-
-  <footer>
-    <p>🛠️ Built by <strong>Sodaduhking</strong></p>
-    <p>📢 Promoted by <strong>registeredgamer (George W. Bush)</strong></p>
-    <a href="https://discord.gg/fVDP9XZn3R" class="discord-btn" target="_blank" rel="noopener noreferrer">
-      💬 Discord
-    </a>
-    <p>🤡 Pure skid energy. For Linux users to say fuck.</p>
-  </footer>
-
+  <script>
+    function showPage(pageNumber) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      document.getElementById('page' + pageNumber).classList.add('active');
+    }
+  </script>
 </body>
 </html>
